@@ -1,0 +1,1 @@
+To build these programs you have to clone "https://github.com/analogdevicesinc/libiio" and build the library.
