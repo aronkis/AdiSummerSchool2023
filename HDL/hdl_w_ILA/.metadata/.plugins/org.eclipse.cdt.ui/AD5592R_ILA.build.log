@@ -1,0 +1,124 @@
+10:05:09 **** Build of configuration Debug for project AD5592R_ILA ****
+make all 
+C:/Xilinx/Vitis/2022.2/gnuwin/bin/make --no-print-directory pre-build
+a9-linaro-pre-build-step
+' '
+C:/Xilinx/Vitis/2022.2/gnuwin/bin/make --no-print-directory main-build
+'Building file: ../src/ad5592r-base.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ad5592r-base.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Internship/HDL/hdl/system_top/export/system_top/sw/system_top/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/ad5592r-base.d" -MT"src/ad5592r-base.o" -o "src/ad5592r-base.o" "../src/ad5592r-base.c"
+'Finished building: ../src/ad5592r-base.c'
+' '
+'Building file: ../src/ad5592r.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ad5592r.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Internship/HDL/hdl/system_top/export/system_top/sw/system_top/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/ad5592r.d" -MT"src/ad5592r.o" -o "src/ad5592r.o" "../src/ad5592r.c"
+'Finished building: ../src/ad5592r.c'
+' '
+'Building file: ../src/axi_adc_core.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/axi_adc_core.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Internship/HDL/hdl/system_top/export/system_top/sw/system_top/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/axi_adc_core.d" -MT"src/axi_adc_core.o" -o "src/axi_adc_core.o" "../src/axi_adc_core.c"
+'Finished building: ../src/axi_adc_core.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Internship/HDL/hdl/system_top/export/system_top/sw/system_top/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:104:36: warning: passing argument 1 of 'axi_adc_init' from incompatible pointer type [-Wincompatible-pointer-types]
+  104 |                 ret = axi_adc_init(&axi_pwm_custom_core,  &axi_pwm_custom_param);
+      |                                    ^~~~~~~~~~~~~~~~~~~~
+      |                                    |
+      |                                    struct axi_adc_init **
+In file included from ../src/main.c:51:
+../src/axi_adc_core.h:181:39: note: expected 'struct axi_adc **' but argument is of type 'struct axi_adc_init **'
+  181 | int32_t axi_adc_init(struct axi_adc **adc_core,
+      |                      ~~~~~~~~~~~~~~~~~^~~~~~~~
+../src/main.c:117:41: warning: passing argument 1 of 'axi_adc_write' from incompatible pointer type [-Wincompatible-pointer-types]
+  117 |                  status = axi_adc_write(axi_pwm_custom_core, AXI_ADC_DATA_CHANNEL_0, value & 0x0fff);
+      |                                         ^~~~~~~~~~~~~~~~~~~
+      |                                         |
+      |                                         struct axi_adc_init *
+In file included from ../src/main.c:51:
+../src/axi_adc_core.h:190:39: note: expected 'struct axi_adc *' but argument is of type 'struct axi_adc_init *'
+  190 | int32_t axi_adc_write(struct axi_adc *adc,
+      |                       ~~~~~~~~~~~~~~~~^~~
+../src/main.c:120:37: warning: passing argument 1 of 'axi_adc_write' from incompatible pointer type [-Wincompatible-pointer-types]
+  120 |              status = axi_adc_write(axi_pwm_custom_core, AXI_ADC_DATA_CHANNEL_1, value1 & 0x0fff);
+      |                                     ^~~~~~~~~~~~~~~~~~~
+      |                                     |
+      |                                     struct axi_adc_init *
+In file included from ../src/main.c:51:
+../src/axi_adc_core.h:190:39: note: expected 'struct axi_adc *' but argument is of type 'struct axi_adc_init *'
+  190 | int32_t axi_adc_write(struct axi_adc *adc,
+      |                       ~~~~~~~~~~~~~~~~^~~
+../src/main.c:123:41: warning: passing argument 1 of 'axi_adc_write' from incompatible pointer type [-Wincompatible-pointer-types]
+  123 |                  status = axi_adc_write(axi_pwm_custom_core, AXI_ADC_DATA_CHANNEL_2, value2 & 0x0fff);
+      |                                         ^~~~~~~~~~~~~~~~~~~
+      |                                         |
+      |                                         struct axi_adc_init *
+In file included from ../src/main.c:51:
+../src/axi_adc_core.h:190:39: note: expected 'struct axi_adc *' but argument is of type 'struct axi_adc_init *'
+  190 | int32_t axi_adc_write(struct axi_adc *adc,
+      |                       ~~~~~~~~~~~~~~~~^~~
+../src/main.c:126:41: warning: passing argument 1 of 'axi_adc_write' from incompatible pointer type [-Wincompatible-pointer-types]
+  126 |                  status = axi_adc_write(axi_pwm_custom_core, AXI_ADC_DATA_CHANNEL_3, value3 & 0x0fff);
+      |                                         ^~~~~~~~~~~~~~~~~~~
+      |                                         |
+      |                                         struct axi_adc_init *
+In file included from ../src/main.c:51:
+../src/axi_adc_core.h:190:39: note: expected 'struct axi_adc *' but argument is of type 'struct axi_adc_init *'
+  190 | int32_t axi_adc_write(struct axi_adc *adc,
+      |                       ~~~~~~~~~~~~~~~~^~~
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/no_os_alloc.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/no_os_alloc.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Internship/HDL/hdl/system_top/export/system_top/sw/system_top/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/no_os_alloc.d" -MT"src/no_os_alloc.o" -o "src/no_os_alloc.o" "../src/no_os_alloc.c"
+'Finished building: ../src/no_os_alloc.c'
+' '
+'Building file: ../src/no_os_spi.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/no_os_spi.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Internship/HDL/hdl/system_top/export/system_top/sw/system_top/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/no_os_spi.d" -MT"src/no_os_spi.o" -o "src/no_os_spi.o" "../src/no_os_spi.c"
+'Finished building: ../src/no_os_spi.c'
+' '
+'Building file: ../src/no_os_util.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/no_os_util.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Internship/HDL/hdl/system_top/export/system_top/sw/system_top/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/no_os_util.d" -MT"src/no_os_util.o" -o "src/no_os_util.o" "../src/no_os_util.c"
+'Finished building: ../src/no_os_util.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Internship/HDL/hdl/system_top/export/system_top/sw/system_top/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building file: ../src/xilinx_axi_io.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xilinx_axi_io.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Internship/HDL/hdl/system_top/export/system_top/sw/system_top/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/xilinx_axi_io.d" -MT"src/xilinx_axi_io.o" -o "src/xilinx_axi_io.o" "../src/xilinx_axi_io.c"
+'Finished building: ../src/xilinx_axi_io.c'
+' '
+'Building file: ../src/xilinx_delay.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xilinx_delay.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Internship/HDL/hdl/system_top/export/system_top/sw/system_top/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/xilinx_delay.d" -MT"src/xilinx_delay.o" -o "src/xilinx_delay.o" "../src/xilinx_delay.c"
+'Finished building: ../src/xilinx_delay.c'
+' '
+'Building file: ../src/xilinx_spi.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xilinx_spi.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Internship/HDL/hdl/system_top/export/system_top/sw/system_top/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/xilinx_spi.d" -MT"src/xilinx_spi.o" -o "src/xilinx_spi.o" "../src/xilinx_spi.c"
+../src/xilinx_spi.c:69:2: warning: #warning SPI delays are not supported on the xilinx platform [-Wcpp]
+   69 | #warning SPI delays are not supported on the xilinx platform
+      |  ^~~~~~~
+'Finished building: ../src/xilinx_spi.c'
+' '
+'Building target: AD5592R_ILA.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/Internship/HDL/hdl/system_top/export/system_top/sw/system_top/standalone_ps7_cortexa9_0/bsplib/lib -o "AD5592R_ILA.elf"  ./src/ad5592r-base.o ./src/ad5592r.o ./src/axi_adc_core.o ./src/main.o ./src/no_os_alloc.o ./src/no_os_spi.o ./src/no_os_util.o ./src/platform.o ./src/xilinx_axi_io.o ./src/xilinx_delay.o ./src/xilinx_spi.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: AD5592R_ILA.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size AD5592R_ILA.elf  |tee "AD5592R_ILA.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  72879	   2572	  22640	  98091	  17f2b	AD5592R_ILA.elf
+'Finished building: AD5592R_ILA.elf.size'
+' '
+
+10:05:30 Build Finished (took 20s.184ms)
+

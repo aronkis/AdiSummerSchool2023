@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Thu Aug  3 07:38:20 2023
+# Process ID: 14516
+# Current directory: C:/Internship/hdl/hdl/projects/ad5592r_pmdz
+# Command line: vivado.exe *.xpr
+# Log file: C:/Internship/hdl/hdl/projects/ad5592r_pmdz/vivado.log
+# Journal file: C:/Internship/hdl/hdl/projects/ad5592r_pmdz\vivado.jou
+# Running On: CLUJ-SPARE-L09, OS: Windows, CPU Frequency: 2592 MHz, CPU Physical cores: 6, Host memory: 16876 MB
+#-----------------------------------------------------------
+start_gui

@@ -1,0 +1,218 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Thu Aug  3 07:21:22 2023
+# Process ID: 15836
+# Current directory: C:/Internship/HDL/hdl/projects/ad5592r_pmdz/zyboz7/ad5592r_zyboz7.runs/system_rom_sys_0_0_synth_1
+# Command line: vivado.exe -log system_rom_sys_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source system_rom_sys_0_0.tcl
+# Log file: C:/Internship/HDL/hdl/projects/ad5592r_pmdz/zyboz7/ad5592r_zyboz7.runs/system_rom_sys_0_0_synth_1/system_rom_sys_0_0.vds
+# Journal file: C:/Internship/HDL/hdl/projects/ad5592r_pmdz/zyboz7/ad5592r_zyboz7.runs/system_rom_sys_0_0_synth_1\vivado.jou
+# Running On: CLUJ-SPARE-L09, OS: Windows, CPU Frequency: 2592 MHz, CPU Physical cores: 6, Host memory: 16876 MB
+#-----------------------------------------------------------
+source system_rom_sys_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 373.348 ; gain = 67.121
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Internship/HDL/hdl/library'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.2/data/ip'.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: system_rom_sys_0_0
+Command: synth_design -top system_rom_sys_0_0 -part xc7z010clg400-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 7868
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:16 ; elapsed = 00:00:21 . Memory (MB): peak = 1193.332 ; gain = 407.133
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'system_rom_sys_0_0' [c:/Internship/hdl/hdl/projects/ad5592r_pmdz/zyboz7/ad5592r_zyboz7.gen/sources_1/bd/system/ip/system_rom_sys_0_0/synth/system_rom_sys_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'sysid_rom' [c:/Internship/hdl/hdl/projects/ad5592r_pmdz/zyboz7/ad5592r_zyboz7.gen/sources_1/bd/system/ipshared/e9b2/sysid_rom.v:37]
+INFO: [Synth 8-3876] $readmem data file 'C:/Internship/HDL/hdl/projects/ad5592r_pmdz/zyboz7/mem_init_sys.txt' is read successfully [c:/Internship/hdl/hdl/projects/ad5592r_pmdz/zyboz7/ad5592r_zyboz7.gen/sources_1/bd/system/ipshared/e9b2/sysid_rom.v:50]
+INFO: [Synth 8-6155] done synthesizing module 'sysid_rom' (0#1) [c:/Internship/hdl/hdl/projects/ad5592r_pmdz/zyboz7/ad5592r_zyboz7.gen/sources_1/bd/system/ipshared/e9b2/sysid_rom.v:37]
+INFO: [Synth 8-6155] done synthesizing module 'system_rom_sys_0_0' (0#1) [c:/Internship/hdl/hdl/projects/ad5592r_pmdz/zyboz7/ad5592r_zyboz7.gen/sources_1/bd/system/ip/system_rom_sys_0_0/synth/system_rom_sys_0_0.v:53]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:20 ; elapsed = 00:00:26 . Memory (MB): peak = 1286.504 ; gain = 500.305
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:21 ; elapsed = 00:00:26 . Memory (MB): peak = 1286.504 ; gain = 500.305
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:26 . Memory (MB): peak = 1286.504 ; gain = 500.305
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1286.504 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1370.512 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.117 . Memory (MB): peak = 1370.531 ; gain = 0.020
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:35 ; elapsed = 00:00:44 . Memory (MB): peak = 1370.531 ; gain = 584.332
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:35 ; elapsed = 00:00:44 . Memory (MB): peak = 1370.531 ; gain = 584.332
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:35 ; elapsed = 00:00:44 . Memory (MB): peak = 1370.531 ; gain = 584.332
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:36 ; elapsed = 00:00:45 . Memory (MB): peak = 1370.531 ; gain = 584.332
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
++---Muxes : 
+	 513 Input   32 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:40 ; elapsed = 00:00:50 . Memory (MB): peak = 1370.531 ; gain = 584.332
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:51 ; elapsed = 00:01:00 . Memory (MB): peak = 1370.531 ; gain = 584.332
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:51 ; elapsed = 00:01:00 . Memory (MB): peak = 1370.531 ; gain = 584.332
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:51 ; elapsed = 00:01:00 . Memory (MB): peak = 1370.531 ; gain = 584.332
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:00 ; elapsed = 00:01:09 . Memory (MB): peak = 1370.531 ; gain = 584.332
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:00 ; elapsed = 00:01:09 . Memory (MB): peak = 1370.531 ; gain = 584.332
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:00 ; elapsed = 00:01:10 . Memory (MB): peak = 1370.531 ; gain = 584.332
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:00 ; elapsed = 00:01:10 . Memory (MB): peak = 1370.531 ; gain = 584.332
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:00 ; elapsed = 00:01:10 . Memory (MB): peak = 1370.531 ; gain = 584.332
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:00 ; elapsed = 00:01:10 . Memory (MB): peak = 1370.531 ; gain = 584.332
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT2 |     6|
+|2     |LUT3 |     5|
+|3     |LUT4 |     6|
+|4     |LUT5 |    18|
+|5     |LUT6 |    66|
+|6     |FDRE |    30|
++------+-----+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:00 ; elapsed = 00:01:10 . Memory (MB): peak = 1370.531 ; gain = 584.332
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:36 ; elapsed = 00:01:05 . Memory (MB): peak = 1370.531 ; gain = 500.305
+Synthesis Optimization Complete : Time (s): cpu = 00:01:00 ; elapsed = 00:01:10 . Memory (MB): peak = 1370.531 ; gain = 584.332
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1370.531 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1370.531 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: b9f6ba95
+INFO: [Common 17-83] Releasing license: Synthesis
+24 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:07 ; elapsed = 00:01:36 . Memory (MB): peak = 1370.531 ; gain = 962.262
+INFO: [Common 17-1381] The checkpoint 'C:/Internship/HDL/hdl/projects/ad5592r_pmdz/zyboz7/ad5592r_zyboz7.runs/system_rom_sys_0_0_synth_1/system_rom_sys_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP system_rom_sys_0_0, cache-ID = baa3f5dbe89a3af3
+INFO: [Common 17-1381] The checkpoint 'C:/Internship/HDL/hdl/projects/ad5592r_pmdz/zyboz7/ad5592r_zyboz7.runs/system_rom_sys_0_0_synth_1/system_rom_sys_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file system_rom_sys_0_0_utilization_synth.rpt -pb system_rom_sys_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Aug  3 07:23:38 2023...
